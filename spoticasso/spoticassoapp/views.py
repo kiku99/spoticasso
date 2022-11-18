@@ -68,7 +68,6 @@ def select(request):
     return HttpResponse(template.render(context, request))
 
 def generate(request, id):
-
     image_path = generate_cover_image(id)
 
     # print(sp.current_user_playlists())
