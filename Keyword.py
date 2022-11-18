@@ -3,7 +3,10 @@ from keybert import KeyBERT
 
 def doc_to_keyword(doc: str):
     model = KeyBERT()
-    keywords = model.extract_keywords(doc, keyphrase_ngram_range=(1, 1), stop_words='english', top_n=5)
+    keywords = model.extract_keywords(doc,
+                                      keyphrase_ngram_range=(1, 1),
+                                      stop_words='english',
+                                      top_n=5)
     return [x[0] for x in keywords]
 
 
