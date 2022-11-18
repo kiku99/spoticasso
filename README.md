@@ -47,10 +47,8 @@ python manage.py runserver
 
 ## ScreenShot
 
-<div>
-  <src="[https://github.com/kiku99/spoticasso/images/index.png](https://github.com/kiku99/spoticasso/blob/main/screenshot/index.png)" />
-  
- </div>
+  <img width="1440" alt="index" src="https://user-images.githubusercontent.com/66311161/202812902-81fce605-a92f-43a1-8be9-8e3625c1cfb1.png">
+
  
  <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
