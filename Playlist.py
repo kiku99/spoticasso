@@ -2,12 +2,12 @@ import requests
 import json
 
 
-def get_track_id_from_playlist(playlist_id: str, apy_key: str):
+def get_track_id_from_playlist(playlist_id: str, api_key: str):
     url = "https://api.apilayer.com/spotify/playlist_tracks?id=" + playlist_id
 
     payload = {}
     headers = {
-        "apikey": apy_key
+        "apikey": api_key
     }
 
     response = requests.request("GET", url, headers=headers, data=payload)
@@ -23,4 +23,4 @@ def get_track_id_from_playlist(playlist_id: str, apy_key: str):
 
 if __name__ == "__main__":
     playlist_id = "7nQwxGiTXLpKQZlO3t4ELN"
-    print(get_track_id_from_playlist(playlist_id=playlist_id, apy_key=""))
+    print(get_track_id_from_playlist(playlist_id=playlist_id, api_key=""))
