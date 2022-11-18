@@ -4,8 +4,8 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 class Playlist:
     def __init__(self,
-                 cid="6ed4802c512d437dafeeab106605f997",
-                 csc="fcbe21f922774b29b68b326582374dd5"):
+                 cid="CID",
+                 csc="CSC"):
         self.__CLIENT_ID = cid
         self.__CLIENT_SECRET = csc
         self.sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(
