@@ -3,6 +3,7 @@ from spotipy import oauth2
 from django.template import loader
 from django.http import HttpResponse
 from spoticassoapp.playlistParser import PlaylistParser
+from spoticassoapp.generation import generate_cover_image
 
 PORT_NUMBER = 8000
 SPOTIPY_CLIENT_ID = '6ed4802c512d437dafeeab106605f997'
@@ -52,11 +53,18 @@ def select(request):
     template = loader.get_template('spoticassoapp/select.html')
     context = {
     'parserDictionary': parser.getDictionary(),
-    'parserName':  parser.getNameList(),
-    'parserId': parser.getIdList()
     }
     
     return HttpResponse(template.render(context, request))
 
-
-# Create your views here.
+def generate(request, id):
+    print(id)
+    
+    generate_cover_image(id)
+    
+    template = loader.get_template('spoticassoapp/select.html')
+    context = {
+    'parserDictionary': 'a',
+    }
+    
+    return HttpResponse(template.render(context, request))

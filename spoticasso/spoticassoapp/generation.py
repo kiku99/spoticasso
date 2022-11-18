@@ -1,10 +1,10 @@
-import Keyword
-import Lyrics
-import Playlist
-import translation
-import stablediffusion
+from spoticassoapp import Keyword
+from spoticassoapp import Lyrics
+from spoticassoapp import Playlist
+from spoticassoapp import translation
+from spoticassoapp import stablediffusion
 
-# PLAYLIST_ID = "7nQwxGiTXLpKQZlO3t4ELN"
+PLAYLIST_ID = "7nQwxGiTXLpKQZlO3t4ELN"
 API_KEY = "Mn0TrmZhj9QRsQHm4iBnguUm7VSKpe67"
 
 
@@ -18,4 +18,3 @@ def generate_cover_image(playlist_id: str):
 
     keywords = Keyword.doc_to_keyword(en_lyrics)
     stablediffusion.download_image(keywords=keywords)
-
