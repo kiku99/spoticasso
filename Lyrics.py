@@ -23,4 +23,4 @@ def get_lyrics(track_id: str, api_key: str):
 
 
 if __name__ == "__main__":
-    print(get_lyrics(track_id="6CV6j2xz54thzlrWML3kAW", api_key="Mn0TrmZhj9QRsQHm4iBnguUm7VSKpe67"))
+    print(get_lyrics(track_id="6CV6j2xz54thzlrWML3kAW", api_key=""))
