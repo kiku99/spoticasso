@@ -51,6 +51,7 @@ def select(request):
                 
     template = loader.get_template('spoticassoapp/select.html')
     context = {
+    'parserDictionary': parser.getDictionary(),
     'parserName':  parser.getNameList(),
     'parserId': parser.getIdList()
     }

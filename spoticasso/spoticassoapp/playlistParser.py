@@ -42,6 +42,13 @@ class PlaylistParser:
         
         return result
     
+    def getDictionary(self):
+        result = dict()
+        items = self.getItems()
+        for item in items:
+            result[item['id']] = item['name']
+        return result
+        
     def printPlayLists(playlists):
         items = playlists['items']
         for item in items:

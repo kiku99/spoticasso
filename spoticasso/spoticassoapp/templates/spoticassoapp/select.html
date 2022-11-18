@@ -8,8 +8,8 @@
 </head>
 <body>
     <h1>hi</h1>
-    {% for name in parserName %}
-        <button type='submit'> {{ name }} </button>
+    {% for id, name in parserDictionary.items %}
+        <button name='selectButton', value={{ id }}> {{ name }} </button>
     {% endfor %}
 
 </body>
