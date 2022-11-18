@@ -9,6 +9,8 @@
 
 음악 플레이리스트 공유가 유행함에 따라, spotify 플레이리스트의 커버 이미지를 자동으로 생성해주는 웹 서비스 입니다. 
 
+![create_image](https://user-images.githubusercontent.com/66311161/202813170-d476ddb5-2d56-47de-9343-27a1da4d80e0.jpeg)
+
 사용자는 웹 브라우저를 통해 spotify에 로그인 할 수 있으며, 로그인에 성공한 경우 시스템은 사용자의 플레이리스트 목록을 불러오고 사용자는 원하는 플레이리스트를 선택하여 커버 이미지를 생성합니다. 시스템은 자연어 처리 모델을 이용해 플레이리스트를 분석하고 번역해 주요 키워드를 추출합니다. 추출된 키워드는 딥러닝 텍스트-이미지 모델을 틍해 적절한 그림을 생성합니다. 생성된 이미지는 자동으로 spotify 플레이리스트 커버 이미지로 등록됩니다.
 
 ## Tech Usage
@@ -49,8 +51,6 @@ python manage.py runserver
 
   <img width="1440" alt="index" src="https://user-images.githubusercontent.com/66311161/202812902-81fce605-a92f-43a1-8be9-8e3625c1cfb1.png">
   <img width="1440" alt="select" src="https://user-images.githubusercontent.com/66311161/202813033-2e44af7c-4804-4ef0-a3bb-e0d69ad980f8.png">
-  ![create_image](https://user-images.githubusercontent.com/66311161/202813054-0025134a-62a3-4429-bc17-c6d354f0b644.jpeg)
-
 
  <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
