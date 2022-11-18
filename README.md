@@ -44,6 +44,12 @@ python manage.py runserver
  - Kim Jaehyeon [kiku99](https://github.com/kiku99)
  - Kim Geonu [dvpaa](https://github.com/dvpaa)
  - Kim Yuna [yuna47](https://github.com/yuna47)
+
+## ScreenShot
+
+<div>
+  <src="https://github.com/kiku99/spoticasso/images/index.jpg" />
+ </div>
  
  <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
