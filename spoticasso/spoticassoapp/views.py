@@ -68,9 +68,8 @@ def select(request):
     return HttpResponse(template.render(context, request))
 
 def generate(request, id):
-    print(id)
-    
-    generate_cover_image(id)
+
+    image_path = generate_cover_image(id)
 
     # print(sp.current_user_playlists())
     global sp_oauth
@@ -86,7 +85,7 @@ def generate(request, id):
     spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(
         scope=scope, client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET, redirect_uri='http://localohst:8000'))
 
-    image = open("/Users/geonukim/PycharmProjects/spoticasso/images/IMG_9932F1FF46C9-1.jpeg", 'rb')
+    image = open("/Users/geonukim/PycharmProjects/spoticasso/images/" + image_path, 'rb')
     image_read = image.read()
     cover_encoded = base64.b64encode(image_read).decode("utf-8")
     #cover_encoded = base64.encodebytes(image_read).strip()

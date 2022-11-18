@@ -7,6 +7,7 @@ def download_image(keywords: list) -> None:
     file_name = "_".join(" ".join(keywords).split()) + ".jpeg"
     save_location = "/Users/geonukim/PycharmProjects/spoticasso/images/"
     urllib.request.urlretrieve(url, save_location + file_name)
+    return file_name
 
 def generate_image_url(keywords: list) -> str:
     prompt = ", ".join(keywords)

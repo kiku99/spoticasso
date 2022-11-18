@@ -17,4 +17,5 @@ def generate_cover_image(playlist_id: str):
         en_lyrics += translation.lyrics_to_english(lyrics)
 
     keywords = Keyword.doc_to_keyword(en_lyrics)
-    stablediffusion.download_image(keywords=keywords)
+    file_name = stablediffusion.download_image(keywords=keywords)
+    return file_name
