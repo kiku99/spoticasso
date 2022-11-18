@@ -26,14 +26,21 @@
 
 ## Start
 
-> playlist.py에 사용자의 cid와 csc를 입력합니다.
+1. [Playlist.py](https://github.com/dvpaa/spoticasso/blob/main/spoticasso/spoticassoapp/Playlist.py)에 사용자의 cid와 csc를 입력합니다.  
+2. stable-diffusion [api token](https://replicate.com/docs)을 발급 후 환경변수 설정을 합니다.
+  ```sh
+  export REPLICATE_API_TOKEN = <TOKEN>  
+  ```  
+3. library 설치
 
-Terminal
-
-```sh
-pip install -r requirements.txt
-python manage.py runserver
-```
+  Terminal
+  
+  ```sh
+  cd spoticasso/spoticassoapp
+  pip install -r requirements.txt
+  cd ../
+  python manage.py runserver
+  ```
 
 ## Release History
 
