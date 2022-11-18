@@ -8,6 +8,9 @@
 </head>
 <body>
     <h1>hi</h1>
-    <a href='{{ authurl }}'>Login to Spotify</a> 
+    {% for name in parserName %}
+        <button type='submit'> {{ name }} </button>
+    {% endfor %}
+
 </body>
 </html>

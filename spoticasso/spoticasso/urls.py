@@ -21,5 +21,6 @@ import spoticassoapp.views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', spoticassoapp.views.index, name='index'),
+    path('select/', spoticassoapp.views.select, name='select')
     
 ]
