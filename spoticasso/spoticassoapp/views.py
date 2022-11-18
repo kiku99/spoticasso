@@ -58,9 +58,8 @@ def select(request):
     return HttpResponse(template.render(context, request))
 
 def generate(request, id):
-    print(id)
     
-    generate_cover_image(id)
+    image = generate_cover_image(id)
     
     template = loader.get_template('spoticassoapp/select.html')
     context = {
