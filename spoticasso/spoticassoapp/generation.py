@@ -5,7 +5,7 @@ from spoticassoapp import translation
 from spoticassoapp import stablediffusion
 
 PLAYLIST_ID = "7nQwxGiTXLpKQZlO3t4ELN"
-API_KEY = "Mn0TrmZhj9QRsQHm4iBnguUm7VSKpe67"
+API_KEY = "AekTFi0Hg6TI9zAwMo7lGz6z4eXdtonu"
 
 
 def generate_cover_image(playlist_id: str):
