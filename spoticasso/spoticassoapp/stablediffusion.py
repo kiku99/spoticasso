@@ -5,7 +5,7 @@ from PIL import Image
 def download_image(keywords: list) -> None:
     url = generate_image_url(keywords)
     file_name = "_".join(" ".join(keywords).split()) + ".jpeg"
-    save_location = "/Users/geonukim/PycharmProjects/spoticasso/images/"
+    save_location = "/Users/kiku/Desktop/spoticasso/images/"
     urllib.request.urlretrieve(url, save_location + file_name)
     image = Image.open(save_location + file_name)
     new_image = image.resize((256, 256))
