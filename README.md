@@ -1,4 +1,4 @@
-# spoticasso
+# Spoticasso
 
 > Spotify playlist 커버 이미지 자동 생성 웹서비스
 
