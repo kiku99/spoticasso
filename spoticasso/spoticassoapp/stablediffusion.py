@@ -5,7 +5,7 @@ import urllib.request
 def download_image(keywords: list) -> None:
     url = generate_image_url(keywords)
     file_name = "_".join(" ".join(keywords).split()) + ".png"
-    save_location = "./images/"
+    save_location = "/Users/kiku/Desktop/spoticasso/images/"
     urllib.request.urlretrieve(url, save_location + file_name)
 
 

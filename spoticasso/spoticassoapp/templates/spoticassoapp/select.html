@@ -9,7 +9,9 @@
 <body>
     <h1>hi</h1>
     {% for id, name in parserDictionary.items %}
-        <button name='selectButton', value={{ id }}> {{ name }} </button>
+    <form action="{% url 'generate' id%}" method="post">
+        <button name='selectButton', type='submit', value={{ id }}> {{ name }} </button>
+    </form>
     {% endfor %}
 
 </body>
