@@ -10,7 +10,7 @@ class Playlist:
         self.__CLIENT_SECRET = csc
         self.sp = spotipy.Spotify(client_credentials_manager=SpotifyClientCredentials(
             client_id=self.__CLIENT_ID,
-            client_secret=self.__CLIENT_SECRET)
+            client_secret=sellciLIENT_SECRET)
         )
 
     def get_playlist(self, playlist_link):

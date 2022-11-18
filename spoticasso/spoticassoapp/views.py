@@ -81,13 +81,13 @@ def generate(request, id):
 
 
     scope="ugc-image-upload"
+    
     spotify = spotipy.Spotify(auth_manager=SpotifyOAuth(
         scope=scope, client_id=SPOTIPY_CLIENT_ID, client_secret=SPOTIPY_CLIENT_SECRET, redirect_uri='http://localohst:8000'))
 
-    image = open("/Users/geonukim/PycharmProjects/spoticasso/images/" + image_path, 'rb')
+    image = open("/Users/kiku/Desktop/spoticasso/images/" + image_path, 'rb')
     image_read = image.read()
     cover_encoded = base64.b64encode(image_read).decode("utf-8")
-    #cover_encoded = base64.encodebytes(image_read).strip()
 
     sp.playlist_upload_cover_image(id, cover_encoded)
     template = loader.get_template('spoticassoapp/select.html')
