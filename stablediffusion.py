@@ -1,16 +1,22 @@
 import replicate
-import webbrowser
+import urllib.request
 
-# a = replicate.Client(api_token="fbb40159d93c03b9be3175f23643fbf70f3ed1d5")
-# # model = a.models.get("stability-ai/stable-diffusion")
-# # model.predict("a 19th century portrait of a wombat gentleman")
 
-# a.models.get("stability-ai/stable-diffusion")
-# print(a)
-# replicate.models.
-model = replicate.models.get("stability-ai/stable-diffusion")
-version = model.versions.get("8abccf52e7cba9f6e82317253f4a3549082e966db5584e92c808ece132037776")
-output = version.predict(prompt="nananana, nanana, feelings")[0]
+def download_image(keywords: list) -> None:
+    url = generate_image(keywords)
+    file_name = "_".join(keywords) + ".png"
+    save_location = "./images/"
+    urllib.request.urlretrieve(url, save_location + file_name)
 
-print(output)
-webbrowser.open(output)
+
+def generate_image(keywords: list) -> str:
+    prompt = ", ".join(keywords)
+    model = replicate.models.get("stability-ai/stable-diffusion")
+    version = model.versions.get("8abccf52e7cba9f6e82317253f4a3549082e966db5584e92c808ece132037776")
+    img_url = version.predict(prompt=prompt)[0]
+    return img_url
+
+
+if __name__ == "__main__":
+    keywords = ['she', 'night', 'raise']
+    download_image(keywords)
