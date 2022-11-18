@@ -48,7 +48,8 @@ python manage.py runserver
 ## ScreenShot
 
 <div>
-  <src="https://github.com/kiku99/spoticasso/images/index.png" />
+  <src="[https://github.com/kiku99/spoticasso/images/index.png](https://github.com/kiku99/spoticasso/blob/main/screenshot/index.png)" />
+  
  </div>
  
  <!-- MARKDOWN LINKS & IMAGES -->
