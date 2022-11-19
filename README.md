@@ -7,7 +7,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 
-음악 플레이리스트 공유가 유행함에 따라, spotify 플레이리스트의 커버 이미지를 자동으로 생성해주는 웹 서비스 입니다. 
+음악 플레이리스트 공유가 유행함에 따라, spotify 플레이리스트를 분석하여 커버 이미지를 자동으로 생성해주는 웹 서비스 입니다. 
 
 ![create_image](https://user-images.githubusercontent.com/66311161/202813170-d476ddb5-2d56-47de-9343-27a1da4d80e0.jpeg)
 
