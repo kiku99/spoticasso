@@ -11,6 +11,9 @@
 
 ![create_image](https://user-images.githubusercontent.com/66311161/202813170-d476ddb5-2d56-47de-9343-27a1da4d80e0.jpeg)
 
+![run_cha_chasomehow_crossing_ra (1)](https://user-images.githubusercontent.com/66311161/202968284-5d6746e0-0f52-48d3-ae50-3a713db7420b.png)
+
+
 사용자는 웹 브라우저를 통해 spotify에 로그인 할 수 있으며, 로그인에 성공한 경우 시스템은 사용자의 플레이리스트 목록을 불러오고 사용자는 원하는 플레이리스트를 선택하여 커버 이미지를 생성합니다. 시스템은 자연어 처리 모델을 이용해 플레이리스트를 분석하고 번역해 주요 키워드를 추출합니다. 추출된 키워드는 딥러닝 텍스트-이미지 모델을 틍해 적절한 그림을 생성합니다. 생성된 이미지는 자동으로 spotify 플레이리스트 커버 이미지로 등록됩니다.
 
 ## Tech Usage
