@@ -11,12 +11,28 @@
 
 ![create_image](https://user-images.githubusercontent.com/66311161/202813170-d476ddb5-2d56-47de-9343-27a1da4d80e0.jpeg)
 
-![run_cha_chasomehow_crossing_ra (1)](https://user-images.githubusercontent.com/66311161/202968284-5d6746e0-0f52-48d3-ae50-3a713db7420b.png)
-
-
 사용자는 웹 브라우저를 통해 spotify에 로그인 할 수 있으며, 로그인에 성공한 경우 시스템은 사용자의 플레이리스트 목록을 불러오고 사용자는 원하는 플레이리스트를 선택하여 커버 이미지를 생성합니다. 시스템은 자연어 처리 모델을 이용해 플레이리스트를 분석하고 번역해 주요 키워드를 추출합니다. 추출된 키워드는 딥러닝 텍스트-이미지 모델을 틍해 적절한 그림을 생성합니다. 생성된 이미지는 자동으로 spotify 플레이리스트 커버 이미지로 등록됩니다.
 
+## Image Example
+
+- playlist_dance
+
+<img width="30%" align="left" src="https://user-images.githubusercontent.com/66311161/202968694-a02831fd-e69f-4b45-9a78-0d0a8873a550.png" />
+<img width="30%" src="https://user-images.githubusercontent.com/66311161/202968724-898d707e-dffe-4b12-a116-d9186404744d.png" />
+
+- playlist_trot
+
+<img width="30%" align="left" src="https://user-images.githubusercontent.com/66311161/202968757-dcb98634-d178-465b-8a3b-e7ddf3789dae.png" />
+<img width="30%" src="https://user-images.githubusercontent.com/66311161/202968806-5d6430bd-8e19-4a2f-a075-f41033860dfe.png" />
+
+
+- playlist_indie
+
+<img width="30%" align="left" src="https://user-images.githubusercontent.com/66311161/202968814-4df8f33f-7590-408e-95c8-b78791e2d091.png" />
+<img width="30%" src="https://user-images.githubusercontent.com/66311161/202968819-9ecb5ba8-bcee-49b0-8df1-b0102a77e328.png" />
+
 ## Tech Usage
+
 
 * Python 3.8.15
 * Django 4.1
